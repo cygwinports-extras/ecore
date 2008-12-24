@@ -1,0 +1,144 @@
+ecore
+------------------------------------------
+Ecore is the event/X abstraction layer that makes doing selections,
+Xdnd, general X stuff, event loops, timeouts and idle handlers fast,
+optimized, and convenient. It's a separate library so anyone can make
+use of the work put into Ecore to make this job easy for applications.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libcurl4-7.16.3-1
+  libeet1-1.1.0-1
+  libevas0-0.9.9.050-1
+  libiconv2-1.12-1
+  libX11_6-1.1.5-1
+  libXcomposite1-0.4.0-1
+  libXcursor1-1.1.9-2
+  libXdamage1-1.1.1-2
+  libXext6-1.0.4-1
+  libXfixes3-4.0.3-2
+  libXrandr2-1.2.3-1
+  libXrender1-0.9.4-2
+  libXss1-1.1.3-1
+  libXtst6-1.0.3-2
+  openssl-0.9.8i-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.enlightenment.org/
+
+Canonical download:
+  http://download.enlightenment.org/snapshots/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ecore-0.9.9.050-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ecore-0.9.9.050-X.cygport all
+
+This will create:
+  /usr/src/ecore-0.9.9.050-X-src.tar.bz2
+  /usr/src/ecore-0.9.9.050-X.tar.bz2
+  /usr/src/libecore-devel-0.9.9.050-X.tar.bz2
+  /usr/src/libecore0-0.9.9.050-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(ecore)
+  /usr/bin/ecore_config.exe
+  /usr/share/doc/ecore-0.9.9.050/AUTHORS
+  /usr/share/doc/ecore-0.9.9.050/COPYING
+  /usr/share/doc/ecore-0.9.9.050/ChangeLog
+  /usr/share/doc/ecore-0.9.9.050/INSTALL
+  /usr/share/doc/ecore-0.9.9.050/README
+
+(libecore0)
+  /usr/bin/cygecore-0.dll
+  /usr/bin/cygecore_con-0.dll
+  /usr/bin/cygecore_config-0.dll
+  /usr/bin/cygecore_evas-0.dll
+  /usr/bin/cygecore_file-0.dll
+  /usr/bin/cygecore_imf-0.dll
+  /usr/bin/cygecore_imf_evas-0.dll
+  /usr/bin/cygecore_ipc-0.dll
+  /usr/bin/cygecore_job-0.dll
+  /usr/bin/cygecore_txt-0.dll
+  /usr/bin/cygecore_x-0.dll
+
+(libecore-devel)
+  /usr/include/enlightenment/Ecore.h
+  /usr/include/enlightenment/Ecore_Con.h
+  /usr/include/enlightenment/Ecore_Config.h
+  /usr/include/enlightenment/Ecore_Data.h
+  /usr/include/enlightenment/Ecore_Evas.h
+  /usr/include/enlightenment/Ecore_File.h
+  /usr/include/enlightenment/Ecore_IMF.h
+  /usr/include/enlightenment/Ecore_IMF_Evas.h
+  /usr/include/enlightenment/Ecore_Ipc.h
+  /usr/include/enlightenment/Ecore_Job.h
+  /usr/include/enlightenment/Ecore_Str.h
+  /usr/include/enlightenment/Ecore_Txt.h
+  /usr/include/enlightenment/Ecore_X.h
+  /usr/include/enlightenment/Ecore_X_Atoms.h
+  /usr/include/enlightenment/Ecore_X_Cursor.h
+  /usr/lib/libecore.dll.a
+  /usr/lib/libecore.la
+  /usr/lib/libecore_con.dll.a
+  /usr/lib/libecore_con.la
+  /usr/lib/libecore_config.dll.a
+  /usr/lib/libecore_config.la
+  /usr/lib/libecore_evas.dll.a
+  /usr/lib/libecore_evas.la
+  /usr/lib/libecore_file.dll.a
+  /usr/lib/libecore_file.la
+  /usr/lib/libecore_imf.dll.a
+  /usr/lib/libecore_imf.la
+  /usr/lib/libecore_imf_evas.dll.a
+  /usr/lib/libecore_imf_evas.la
+  /usr/lib/libecore_ipc.dll.a
+  /usr/lib/libecore_ipc.la
+  /usr/lib/libecore_job.dll.a
+  /usr/lib/libecore_job.la
+  /usr/lib/libecore_txt.dll.a
+  /usr/lib/libecore_txt.la
+  /usr/lib/libecore_x.dll.a
+  /usr/lib/libecore_x.la
+  /usr/lib/pkgconfig/ecore-con.pc
+  /usr/lib/pkgconfig/ecore-config.pc
+  /usr/lib/pkgconfig/ecore-evas.pc
+  /usr/lib/pkgconfig/ecore-file.pc
+  /usr/lib/pkgconfig/ecore-imf-evas.pc
+  /usr/lib/pkgconfig/ecore-imf.pc
+  /usr/lib/pkgconfig/ecore-ipc.pc
+  /usr/lib/pkgconfig/ecore-job.pc
+  /usr/lib/pkgconfig/ecore-txt.pc
+  /usr/lib/pkgconfig/ecore-x.pc
+  /usr/lib/pkgconfig/ecore.pc
+
+------------------
+
+Port Notes:
+
+----- version 0.9.9.050-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

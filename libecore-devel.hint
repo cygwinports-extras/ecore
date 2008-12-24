@@ -1,0 +1,9 @@
+category: X11
+requires: cygwin libecore0 curl-devel libeet-devel libevas-devel libiconv libX11-devel libXcomposite-devel libXcursor-devel libXdamage-devel libXext-devel libXfixes-devel libXrandr-devel libXrender-devel libXss-devel libXtst-devel openssl-devel
+external-source: ecore
+sdesc: "Enlightenment event/X abstraction layer (development)"
+ldesc: "Ecore is the event/X abstraction layer that makes doing 
+selections, Xdnd, general X stuff, event loops, timeouts and idle 
+handlers fast, optimized, and convenient. It's a separate library so 
+anyone can make use of the work put into Ecore to make this job easy for 
+applications."
