@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libecore0 curl-devel libeet-devel libevas-devel libiconv libX11-devel libXcomposite-devel libXcursor-devel libXdamage-devel libXext-devel libXfixes-devel libXrandr-devel libXrender-devel libXss-devel libXtst-devel openssl-devel
+requires: cygwin libecore0 curl-devel libeet-devel libevas-devel libiconv libX11-devel libXcomposite-devel libXcursor-devel libXdamage-devel libXext-devel libXfixes-devel libXinerama-devel libXrandr-devel libXrender-devel libXss-devel libXtst-devel openssl-devel
 external-source: ecore
 sdesc: "Enlightenment event/X abstraction layer (development)"
 ldesc: "Ecore is the event/X abstraction layer that makes doing 
