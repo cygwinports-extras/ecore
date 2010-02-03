@@ -1,0 +1,11 @@
+--- origsrc/ecore-0.9.9.063/configure.ac	2009-12-02 16:15:47.000000000 -0600
++++ src/ecore-0.9.9.063/configure.ac	2010-02-03 01:34:41.950714500 -0600
+@@ -399,7 +399,7 @@ if test "x${have_iconv}" = "xno" ; then
+       [have_iconv="yes"]   )
+ 
+    if ! test "x${have_iconv}" = "xyes" ; then
+-      AC_CHECK_LIB(iconv, iconv,
++      AC_CHECK_LIB(iconv, libiconv,
+          [
+           iconv_libs="-liconv"
+           have_iconv="yes"

@@ -1,0 +1,13 @@
+--- origsrc/ecore-0.9.9.063/m4/ecore_check_module.m4	2009-03-13 11:40:54.000000000 -0500
++++ src/ecore-0.9.9.063/m4/ecore_check_module.m4	2010-02-03 02:29:15.456948300 -0600
+@@ -1,8 +1,8 @@
+ dnl use: ECORE_CHECK_MODULE(Foo, default-enabled[, dependancy[, ACTION-IF-FOUND[, ACTION-IF-NOT-FOUND]]])
+ AC_DEFUN([ECORE_CHECK_MODULE],
+ [
+-m4_pushdef([UP], m4_toupper([[$1]]))dnl
+-m4_pushdef([DOWN], m4_tolower([[$1]]))dnl
++m4_pushdef([UP], m4_toupper([$1]))dnl
++m4_pushdef([DOWN], m4_tolower([$1]))dnl
+ 
+ have_ecore_[]m4_defn([DOWN])=no
+ ecore_[]m4_defn([DOWN])[]_cflags=
