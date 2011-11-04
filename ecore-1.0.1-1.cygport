@@ -1,0 +1,10 @@
+DESCRIPTION="Enlightenment event/X abstraction layer"
+HOMEPAGE="http://www.enlightenment.org/"
+SRC_URI="http://download.enlightenment.org/releases/${P}.tar.bz2"
+PATCH_URI="1.0.1-no-undefined.patch"
+
+PKG_NAMES="libecore1 libecore-devel"
+libecore1_CONTENTS="usr/bin/*-1.dll usr/share/"
+libecore_devel_CONTENTS="usr/include/ usr/lib/"
+
+CYGCONF_ARGS="--disable-static"

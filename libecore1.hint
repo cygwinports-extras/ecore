@@ -1,5 +1,5 @@
 category: X11
-requires: libcurl4 libeet1 libeina05 libevas05 libgcc1 libglib2.0_0 libgnutls26 libiconv2 libX11_6 libXcomposite1 libXcursor1 libXdamage1 libXext6 libXfixes3 libXinerama1 libXrandr2 libXrender1 libXss1 libXtst6 openssl
+requires: libcurl4 libeina1 libevas1 libglib2.0_0 libgnutls26 libintl8 libX11_6 libXcomposite1 libXcursor1 libXdamage1 libXext6 libXfixes3 libXi6 libXinerama1 libXrandr2 libXrender1 libXss1 libXtst6
 external-source: ecore
 sdesc: "Enlightenment event/X abstraction layer (runtime)"
 ldesc: "Ecore is the event/X abstraction layer that makes doing 

@@ -1,6 +1,5 @@
 category: X11
-requires: libecore05 libeet1 libgcc1
-sdesc: "Enlightenment event/X abstraction layer (utilities)"
+sdesc: "Enlightenment event/X abstraction layer (sources)"
 ldesc: "Ecore is the event/X abstraction layer that makes doing 
 selections, Xdnd, general X stuff, event loops, timeouts and idle 
 handlers fast, optimized, and convenient. It's a separate library so 
