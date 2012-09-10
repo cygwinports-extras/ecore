@@ -9,3 +9,13 @@
  libecore_x_la_DEPENDENCIES = $(DEP)
  
  includes_HEADERS = \
+--- origsrc/ecore-1.7.0/src/modules/immodules/ibus/Makefile.am	2012-06-11 10:36:51.000000000 -0500
++++ src/ecore-1.7.0/src/modules/immodules/ibus/Makefile.am	2012-09-09 22:24:21.831043700 -0500
+@@ -27,6 +27,7 @@ ibus_imcontext.c \
+ ibus_imcontext.h
+ 
+ ibus_la_LIBADD = \
++	 $(top_builddir)/src/lib/ecore_evas/libecore_evas.la \
+ 	 $(top_builddir)/src/lib/ecore_imf/libecore_imf.la \
+ 	 $(top_builddir)/src/lib/ecore_x/libecore_x.la \
+ 	@IBUS_LIBS@ \

@@ -1,7 +1,0 @@
-category: X11
-sdesc: "Enlightenment event/X abstraction layer (sources)"
-ldesc: "Ecore is the event/X abstraction layer that makes doing 
-selections, Xdnd, general X stuff, event loops, timeouts and idle 
-handlers fast, optimized, and convenient. It's a separate library so 
-anyone can make use of the work put into Ecore to make this job easy for 
-applications."

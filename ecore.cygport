@@ -1,0 +1,38 @@
+NAME="ecore"
+VERSION=1.7.0
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="Enlightenment event/X abstraction layer"
+DESCRIPTION="Ecore is the event/X abstraction layer that makes doing selections,
+Xdnd, general X stuff, event loops, timeouts and idle handlers fast, optimized,
+and convenient. It's a separate library so anyone can make use of the work put
+into Ecore to make this job easy for applications."
+HOMEPAGE="http://www.enlightenment.org/"
+SRC_URI="http://download.enlightenment.org/releases/${P}.tar.bz2"
+PATCH_URI="1.0.1-no-undefined.patch"
+
+PKG_NAMES="libecore1 libecore-devel"
+libecore1_CONTENTS="usr/bin/*-1.dll usr/lib/ecore/ usr/share/"
+libecore_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+
+DEPEND="pkgconfig(eina)
+	pkgconfig(evas)
+	pkgconfig(glib-2.0)
+	pkgconfig(gnutls)
+	pkgconfig(ibus-1.0)
+	pkgconfig(libcurl)
+	pkgconfig(x11)
+	pkgconfig(xcomposite)
+	pkgconfig(xcursor)
+	pkgconfig(xdamage)
+	pkgconfig(xext)
+	pkgconfig(xfixes)
+	pkgconfig(xi)
+	pkgconfig(xinerama)
+	pkgconfig(xrandr)
+	pkgconfig(xrender)
+	pkgconfig(xscrnsaver)
+	pkgconfig(xtst)
+"
+
+KEEP_LA_FILES="none"
