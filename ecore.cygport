@@ -1,14 +1,14 @@
 NAME="ecore"
-VERSION=1.7.4
+VERSION=1.7.7
 RELEASE=1
-CATEGORY="X11"
+CATEGORY="Libs"
 SUMMARY="Enlightenment event/X abstraction layer"
 DESCRIPTION="Ecore is the event/X abstraction layer that makes doing selections,
 Xdnd, general X stuff, event loops, timeouts and idle handlers fast, optimized,
 and convenient. It's a separate library so anyone can make use of the work put
 into Ecore to make this job easy for applications."
 HOMEPAGE="http://www.enlightenment.org/"
-SRC_URI="http://download.enlightenment.org/releases/${P}.tar.bz2"
+SRC_URI="http://download.enlightenment.org/releases/ecore-${VERSION}.tar.bz2"
 PATCH_URI="1.0.1-no-undefined.patch"
 
 PKG_NAMES="libecore1 libecore-devel"
